@@ -14,7 +14,14 @@
     --cuprum: 'cuprum';
 }
 html{
+    position: relative;
     overflow-x: hidden;
+}
+.spot{
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    height: 100vh;
 }
 body{
     position: relative;
@@ -38,7 +45,7 @@ body::after{
 }
 .spots{
     z-index: 0;
-    position: absolute;
+    position: relative;
 }
 .spots:nth-child(1){
     top: 20px;
