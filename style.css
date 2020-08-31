@@ -13,9 +13,12 @@
     --modak: 'modak';
     --cuprum: 'cuprum';
 }
-body{
+html{
     overflow-x: hidden;
+}
+body{
     position: relative;
+    width: 100%;
 }
 body::after{
     content: '';
