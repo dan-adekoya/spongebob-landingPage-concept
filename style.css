@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary: #DBC500;
+    --other1: #CC750E;
+    --button1: #F57C14;
+    --button2: #FFE600;
+    --white: #FFFFFF;
+    --black: #000000;
+    --modak: 'modak';
+    --cuprum: 'cuprum';
+}
+body{
+    overflow-x: hidden;
+    position: relative;
+}
+.spots{
+    z-index: 0;
+    position: absolute;
+}
+.spots:nth-child(1){
+    top: 20px;
+    left: 10px;
+}
+.spots:nth-child(2){
+    top: 30px;
+    left: 400px;
+}
+.spots:nth-child(3){
+    top: 100px;
+    left: 1000px;
+}
+.spots:nth-child(4){
+    top: 500px;
+    left: 500px;
+}
+.spots:nth-child(5){
+    top:400px;
+    left: 800px;
+}
+.spots:nth-child(6){
+    top: 450px;
+    left: 60px;
+}
+.spots:nth-child(7){
+    top: 500px;
+    left: 1100px;
+}
+.spots:nth-child(8){
+    top: 40%;
+    left: 40%;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: var(--primary);
+    font-family: var(--modak);
+}
+.logo{
+    text-align: right;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+.main h1{
+    color: var(--white);
+    font-size: 70px;
+}
+.main{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tie{
+    width: 50px;
+    height: 200px;
+    background: #FE4C4C;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+footer{
+    padding: 10px 0;
+    background: var(--other1);
+    margin-top: -50px;
+}
+footer .belt{
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-around;
+}
+footer .buckle{
+    width: 20%;
+    height: 41px;
+    background: black;
+    opacity: 30%;
+}
+footer .buttons{
+    width: 320px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons button{
+    font-family: var(--cuprum);
+    font-size: 20px;
+    padding: 20px 25px;
+    border-radius: 500px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.buttons button:nth-child(1){
+    background: var(--button1);
+    color: var(--white);
+}
+.buttons button:nth-child(2){
+    background: var(--button2);
+    color: var(--black);
+}
+footer .socials{
+    width: 200px;
+    font-size: 18px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.socials a{
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--cuprum);
+}
+@media screen and (max-width: 980px){
+    .main h1{
+        text-align: center;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .main h1{
+        font-size: 40px;
+    }
+    .main img{
+        width: 250px;
+    }
+}
